@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../assets/fonts/futura light bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../assets/fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trend Sans';
+  src: url('../assets/fonts/FontsFree-Net-Trend-Sans-W00-Five.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alleron';
+  src: url('../assets/fonts/Aileron-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../assets/fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Horizon';
+  src: url('../assets/fonts/horizon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

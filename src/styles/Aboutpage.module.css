@@ -1,0 +1,15 @@
+.imageContainer {
+  position: relative;
+  overflow: hidden; /* To ensure the image doesn't overflow the container */
+}
+
+.image {
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image takes full width of its container */
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.1); /* Zoom in by 10% */
+}
