@@ -4,6 +4,14 @@ import cordless from '../assets/images/cordelessdrill.png';
 import impact from '../assets/images/impactdrill.png';
 import rotary from '../assets/images/rotarydrill.png';
 import hammer from '../assets/images/Hammerdrill.png';
+import chainsaw1 from '../assets/images/chainsaw1.png';
+import chainsaw2 from '../assets/images/chainsaw2.png';
+import chainsaw3 from '../assets/images/chainsaw3.png';
+import chainsaw4 from '../assets/images/chainsaw4.png';
+import washer1 from '../assets/images/washer1.png';
+import washer2 from '../assets/images/washer2.png';
+import washer3 from '../assets/images/washer3.png';
+import washer4 from '../assets/images/washer4.png';
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState('All');
@@ -101,6 +109,182 @@ const Products = () => {
         warranty: '1 year'
       },
       price: '$199.99'
+    },
+    { 
+      title: 'Chainsaw Pro X1', 
+      subtitle: 'Professional Chainsaw', 
+      speed: '12000 RPM', 
+      drillDiameter: '16"',
+      imageUrl: chainsaw1,
+      category: 'Power Tools',
+      description: 'Professional-grade chainsaw with superior cutting performance.',
+      features: [
+        'Anti-vibration system',
+        'Quick chain adjustment',
+        'Automatic chain oiling',
+        'Safety chain brake'
+      ],
+      specifications: {
+        weight: '5.5 kg',
+        power: '2000W',
+        barLength: '16 inches',
+        warranty: '2 years'
+      },
+      price: '$449.99'
+    },
+    { 
+      title: 'Chainsaw Elite 2000', 
+      subtitle: 'Heavy-Duty Chainsaw', 
+      speed: '13500 RPM', 
+      drillDiameter: '18"',
+      imageUrl: chainsaw2,
+      category: 'Power Tools',
+      description: 'Heavy-duty chainsaw designed for demanding cutting tasks.',
+      features: [
+        'Tool-less chain tensioning',
+        'Ergonomic wrap-around handle',
+        'Low kickback chain',
+        'Electronic soft start'
+      ],
+      specifications: {
+        weight: '6.2 kg',
+        power: '2200W',
+        barLength: '18 inches',
+        warranty: '3 years'
+      },
+      price: '$599.99'
+    },
+    {
+      title: 'Chainsaw Lite X3',
+      subtitle: 'Compact Chainsaw',
+      speed: '11000 RPM',
+      drillDiameter: '14"',
+      imageUrl: chainsaw3,
+      category: 'Power Tools',
+      description: 'Lightweight and compact chainsaw perfect for home use.',
+      features: [
+        'Lightweight design',
+        'Easy start system',
+        'Tool-free access',
+        'Transparent oil level window'
+      ],
+      specifications: {
+        weight: '4.8 kg',
+        power: '1800W',
+        barLength: '14 inches',
+        warranty: '2 years'
+      },
+      price: '$349.99'
+    },
+    {
+      title: 'Chainsaw Master 4000',
+      subtitle: 'Professional Chainsaw',
+      speed: '14000 RPM',
+      drillDiameter: '20"',
+      imageUrl: chainsaw4,
+      category: 'Power Tools',
+      description: 'High-performance chainsaw for professional logging and tree services.',
+      features: [
+        'Professional-grade engine',
+        'Advanced air filtration',
+        'Heated handles',
+        'Magnesium chassis'
+      ],
+      specifications: {
+        weight: '6.8 kg',
+        power: '2400W',
+        barLength: '20 inches',
+        warranty: '3 years'
+      },
+      price: '$799.99'
+    },
+    {
+      title: 'Power Washer Pro',
+      subtitle: 'High-Pressure Washer',
+      speed: '2800 PSI',
+      drillDiameter: '15°',
+      imageUrl: washer1,
+      category: 'Agricultural Tools',
+      description: 'Professional high-pressure washer for agricultural cleaning applications.',
+      features: [
+        'Adjustable pressure control',
+        'Multiple nozzle attachments',
+        'Heavy-duty brass pump',
+        'Thermal protection system'
+      ],
+      specifications: {
+        weight: '23 kg',
+        power: '2200W',
+        waterFlow: '6.0 L/min',
+        warranty: '2 years'
+      },
+      price: '$599.99'
+    },
+    {
+      title: 'Washer Elite X2',
+      subtitle: 'Industrial Washer',
+      speed: '3200 PSI',
+      drillDiameter: '25°',
+      imageUrl: washer2,
+      category: 'Agricultural Tools',
+      description: 'Heavy-duty industrial washer with extended reach and superior cleaning power.',
+      features: [
+        'Extended reach wand',
+        'Quick-connect spray tips',
+        'Steel-braided hose',
+        'Onboard detergent tank'
+      ],
+      specifications: {
+        weight: '28 kg',
+        power: '2500W',
+        waterFlow: '7.5 L/min',
+        warranty: '3 years'
+      },
+      price: '$749.99'
+    },
+    {
+      title: 'Washer Pro Max',
+      subtitle: 'Commercial Washer',
+      speed: '3500 PSI',
+      drillDiameter: '30°',
+      imageUrl: washer3,
+      category: 'Agricultural Tools',
+      description: 'Commercial-grade pressure washer with advanced cleaning capabilities.',
+      features: [
+        'Professional spray gun',
+        'Dual detergent tanks',
+        'All-terrain wheels',
+        'Digital pressure control'
+      ],
+      specifications: {
+        weight: '32 kg',
+        power: '2800W',
+        waterFlow: '8.0 L/min',
+        warranty: '3 years'
+      },
+      price: '$899.99'
+    },
+    {
+      title: 'Washer Ultra Force',
+      subtitle: 'Heavy-Duty Industrial Washer',
+      speed: '4000 PSI',
+      drillDiameter: '40°',
+      imageUrl: washer4,
+      category: 'Agricultural Tools',
+      description: 'Ultra-powerful industrial washer for the most demanding cleaning tasks.',
+      features: [
+        'Triple piston pump',
+        'Stainless steel frame',
+        'Professional hose reel',
+        'Smart pressure sensing'
+      ],
+      specifications: {
+        weight: '35 kg',
+        power: '3000W',
+        waterFlow: '9.5 L/min',
+        warranty: '4 years'
+      },
+      price: '$1,199.99'
     }
   ];
 
@@ -225,9 +409,15 @@ const Products = () => {
         );
         return renderCards(constructionTools);
       case 'Power Tools':
-        return <div>Content for Power Tools</div>;
+        const powerTools = products.filter(
+          product => product.category === 'Power Tools'
+        );
+        return renderCards(powerTools);
       case 'Agricultural Tools':
-        return <div>Content for Agricultural Tools</div>;
+        const agriculturalTools = products.filter(
+          product => product.category === 'Agricultural Tools'
+        );
+        return renderCards(agriculturalTools);
       default:
         return null;
     }
